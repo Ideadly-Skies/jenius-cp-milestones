@@ -6,17 +6,18 @@
     <link href="../output.css" rel="stylesheet">
     <title>About-Us Page</title>
 </head>
+
 <body>
     <!-- navbar for jenius -->
-    <nav class="bg-gray-200 border-gray-200 dark:bg-gray-900 sticky top-0 z-10">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 sticky top-0 z-10" style="position: fixed; width: 100vw; height: 80px;">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://www.jenius.com/assets/img/brand/logo_jenius-blue.svg" class="h-8" alt="Flowbite Logo" />
             </a>
             
             <!-- navbar content -->
-            <div class="bg-gray-200 items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-language">
-                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 rounded-lg bg-gray-200 border-0 rtl:space-x-reverse">
+            <div class="bg-white items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-language">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 rounded-lg bg-white border-0 rtl:space-x-reverse">
                     <li>
                         <a href="./index.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Home</a>
                     </li>
@@ -27,10 +28,10 @@
                         <a href="./portfolio.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Register</a>
+                        <a href="./register.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Register</a>
                     </li>
                     <li>
-                        <a href="./about-us.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">About Us</a>
+                        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">About Us</a>
                     </li>
                     <li>
                         <a href="./contact-us.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Contact Us</a>
@@ -58,50 +59,255 @@
     </nav>
     
     <!-- Hero Section -->
-    <div class="relative">
+    <div class="mt-[80px]">
         <!-- Background Image -->
         <img 
-            src="https://assets.kompasiana.com/items/album/2017/07/19/mobile-header-banner-template-jenius-blue-1-596f8d29da1e4a4de060d982.jpg?t=o&v=740&x=416" 
+            src="https://www.btpn.com/desktop---header-banner-template-jenius-blue.jpg" 
             alt="Jenius Banking Reinvented"
             class="w-full"
             width="250" height="250"
-        >
+            >
     </div>
 
-    <!-- Centered Text Section -->
-    <div class="min-h-screen flex items-center justify-center bg-white p-8">
-        <div class="max-w-3xl text-center">
-            <h1 class="text-4xl font-semibold bg-orange-500 mb-6">Jenius</h1>
-            <p class="text-lg text-gray-700 mb-4">
-                Setiap keputusan yang diambil dalam hidup selalu terkait dengan konsekuensi finansial. 
-                Kondisi tersebut memperlihatkan keterikatan antara hidup dan finansial — yang kami 
-                namakan Life Finance.
+    <!-- Jenius Text Section -->
+    <div class="min-h-screen flex items-center justify-center bg-gray-100 px-8 py-8">
+        <div class="max-w-3xl bg-white p-10 rounded-lg shadow-lg">
+            <p class="text-orange-500 text-4xl font-semibold mb-6 text-center">Jenius</p>
+            
+            <p class="text-gray-700 text-justify mb-4">
+                Setiap keputusan yang diambil dalam hidup selalu terkait dengan konsekuensi finansial. Kondisi tersebut memperlihatkan keterikatan antara hidup dan finansial—yang kami namakan Life Finance.
             </p>
-            <p class="text-lg text-gray-700 mb-4">
-                Dalam upaya membantu Anda mengatur Life Finance, Jenius sebagai layanan perbankan 
-                terbaru dari Bank BTPN berkomitmen untuk memberi pelayanan istimewa bagi Anda.
+            <p class="text-gray-700 text-justify mb-4">
+                Dalam upaya membantu Anda mengatur Life Finance, Jenius sebagai layanan perbankan terbaru dari Bank BTPN berkomitmen untuk memberi pelayanan istimewa bagi Anda.
             </p>
-            <p class="text-lg text-gray-700 mb-4">
-                Jenius adalah <span class="font-semibold">Banking Reinvented.</span>
-            </p>
-            <p class="text-lg text-gray-700 mb-6">
+            <p class="text-gray-700 text-justify mb-4 font-semibold">Jenius adalah <strong>Banking Reinvented.</strong></p>
+
+            <p class="text-gray-700 text-justify mb-4">
                 Dengan Jenius, Anda memiliki kendali penuh dalam mengatur hidup dan keuangan melalui 
                 <em>smartphone</em> dengan aman, mudah, dan cerdas. Kini Life Finance ada di ujung jari Anda.
             </p>
-            <p class="text-lg text-gray-700 mb-4">
-                Terhubung dengan Jenius melalui akun sosial media resmi:
+            <p class="text-gray-700 text-justify mb-4">
+                Terdapat banyak hal baru yang hanya ada di Jenius.
             </p>
-            <div class="space-y-2">
-                <a href="https://www.facebook.com/Jenius-Connect" class="text-blue-500 hover:underline block">Facebook: https://www.facebook.com/Jenius-Connect</a>
-                <a href="https://www.instagram.com/jeniusconnect" class="text-blue-500 hover:underline block">Instagram: https://www.instagram.com/jeniusconnect</a>
-                <a href="https://twitter.com/JeniusConnect" class="text-blue-500 hover:underline block">Twitter: https://twitter.com/JeniusConnect</a>
+            <p class="text-gray-700 text-justify mb-4">
+                Selain dapat membuka tabungan melalui <em>smartphone</em> tanpa perlu ke bank, Anda akan menemukan cara baru mengatur Life Finance dengan 
+                <strong>$Cashtag, Save It, Send It, Pay Me, Split Bill, eCard</strong>, dan lain-lain.
+            </p>
+            <p class="text-gray-700 text-justify mb-4">
+                Dengan Jenius, Anda dapat mengatur Life Finance dengan mudah, cerdas, dan aman.
+            </p>
+            <p class="text-gray-700 text-justify mb-6">
+                Untuk informasi lebih lengkap mengenai Jenius, kunjungi <a href="https://www.jenius.com/" class="text-orange-500 underline">https://www.jenius.com/</a>
+            </p>
+
+            <h3 class="text-gray-800 text-lg font-medium mb-2">Terhubung dengan Jenius melalui akun sosial media resmi Jenius:</h3>
+            <ul class="space-y-2">
+                <li class="text-gray-700"><a href="https://www.facebook.com/Jenius-Connect" class="text-orange-500 hover:underline">Facebook: https://www.facebook.com/Jenius-Connect</a></li>
+                <li class="text-gray-700"><a href="https://www.instagram.com/jeniusconnect/" class="text-orange-500 hover:underline">Instagram: https://www.instagram.com/jeniusconnect/</a></li>
+                <li class="text-gray-700"><a href="https://twitter.com/JeniusConnect" class="text-orange-500 hover:underline">Twitter: https://twitter.com/JeniusConnect</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- savings, transactions, and cards section -->
+    <div class="bg-gray-100 py-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+    
+        <!-- Savings Card -->
+        <div class="relative group">
+            <img src="https://www.btpn.com/business_dreamsaver-3_3.jpg" alt="Savings" class="object-cover w-full h-full">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+            <h2 class="text-white text-2xl font-semibold">Savings</h2>
+            </div>
+        </div>
+    
+        <!-- Transactions Card -->
+        <div class="relative group">
+            <img src="https://www.btpn.com/product-category-banner---desktop-4_2.jpg" alt="Transactions" class="object-cover w-full h-full">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+            <h2 class="text-white text-2xl font-semibold">Transactions</h2>
+            </div>
+        </div>
+    
+        <!-- Cards Card -->
+        <div class="relative group">
+            <img src="https://www.btpn.com/business_card_revised_2_3.jpg" alt="Cards" class="object-cover w-full h-full">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+            <h2 class="text-white text-2xl font-semibold">Cards</h2>
+            </div>
+        </div>
+        </div>
+    
+        <!-- Tagline Section -->
+        <div class="text-center py-8">
+            <h3 class="text-orange-500 text-3xl font-semibold mb-2">Semua menjadi satu</h3>
+            <p class="text-gray-600 text-lg mb-6">Setiap aspek finansial dapat diatur dari <em>smartphone</em>.</p>
+        
+            <!-- App Store Buttons -->
+            <div class="flex justify-center space-x-4">
+                <button>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Download_on_the_App_Store_Badge_US-UK_RGB_blk.svg" alt="App Store" class="h-12">
+                </button>
+                <button>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-12">
+                </button>
             </div>
         </div>
     </div>
 
+   <!-- Simple YouTube Video Embed Section -->
+    <div class="min-h-screen flex items-center justify-center bg-gray-100">
+        <iframe 
+            width="600" 
+            height="500" 
+            src="https://www.youtube.com/embed/fgIuRvgfLqQ?si=5TbLjmQ27jLImw1A" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
 
+    <!-- Testimonial Section -->
+    <div class="bg-white py-16">
+        <h2 class="text-4xl font-bold text-orange-600 text-center mb-4">Dampak Nyata</h2>
+        <p class="text-lg text-center text-gray-600 mb-12">
+            Jenius akan selalu ada di setiap aspek Life Finance Anda.
+        </p>
 
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
+            <!-- Left Arrow -->
+            <button class="text-gray-300 hover:text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            
+            <!-- Image Section -->
+            <div class="w-1/2 md:w-1/3">
+                <img 
+                    src="https://www.btpn.com/_dsc6484.png" 
+                    alt="Testimonial Person" 
+                >
+            </div>
 
+            <!-- Text Section -->
+            <div class="w-full md:w-2/3 text-center md:text-left">
+                <h3 class="text-2xl font-bold text-orange-500">Irfan Nur Ilman</h3>
+                <p class="text-lg font-medium text-gray-500 mb-4">Pegawai Negeri Sipil</p>
+                <p class="text-lg text-gray-700">
+                    “Jenius sangat kekinian dan pas untuk gaya hidup urban. Jenius mengerti kehidupan 
+                    masyarakat zaman sekarang yang dinamis dan tidak punya banyak waktu/tenaga untuk mengatur 
+                    urusan perbankan. Jenius membuat hidup lebih sederhana.”
+                </p>
+            </div>
 
+            <!-- Right Arrow -->
+            <button class="text-gray-300 hover:text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Pagination Dots -->
+        <div class="flex justify-center mt-8 space-x-2">
+            <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+            <div class="w-3 h-3 bg-orange-400 rounded-full"></div>
+            <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+        </div>
+    </div>
+
+    <!-- footer for btpn -->
+    <footer class="bg-[#58A7DB] text-white py-12 px-4 md:px-12">
+        <div class="max-w-screen-xl mx-auto">
+          <!-- Top Section -->
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold mb-4">Mau Hidup Simpel?</h2>
+            <p class="mb-6">Segera aktivasi dari aplikasi untuk memiliki akun Jenius. Prosesnya mudah, tanpa susah.</p>
+            <button class="bg-white text-blue-600 font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition">
+              Download Sekarang
+            </button>
+            <div class="mt-4 flex justify-center space-x-4">
+              <button><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-12"></button>
+              <button><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Download_on_the_App_Store_Badge_US-UK_RGB_blk.svg" alt="App Store" class="h-12"></button>
+            </div>
+          </div>
+      
+          <!-- Links Section -->
+          <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-10">
+            <div>
+              <h3 class="font-bold mb-3">Navigation</h3>
+              <ul>
+                <li class="font-semibold">Transactions</li>
+                <li>Pembayaran</li>
+                <li>Tagih Uang</li>
+                <li>Kirim Uang</li>
+                <li>Kelola Transaksi</li>
+              </ul>
+            </div>
+      
+            <div>
+              <h3 class="font-bold mb-3">Tracking & Settings</h3>
+              <ul>
+                <li>Histori</li>
+                <li>Card Center</li>
+              </ul>
+            </div>
+      
+            <div>
+              <h3 class="font-bold mb-3">Wealth</h3>
+              <ul>
+                <li>Tabungan</li>
+                <li>Investasi</li>
+                <li>Proteksi</li>
+                <li>Kredit</li>
+              </ul>
+            </div>
+      
+            <div>
+              <h3 class="font-bold mb-3">Jenius Help</h3>
+              <ul>
+                <li>Get Help</li>
+                <li>FAQ</li>
+                <li>Dictionary</li>
+              </ul>
+            </div>
+      
+            <div>
+              <h3 class="font-bold mb-3">Follow</h3>
+              <div class="flex space-x-4">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="h-6"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="h-6"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="YouTube" class="h-6"></a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Bottom Section -->
+          <div class="border-t border-white mt-10 pt-6 text-center">
+            <p class="text-sm">
+              PT Bank BTPN Tbk berizin dan diawasi oleh Otoritas Jasa Keuangan (OJK), Bank Indonesia (BI) dan merupakan peserta penjaminan LPS.
+            </p>
+          </div>
+        </div>
+    </footer>
+
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+ 
 </body>
+    
+<!-- Tailwind Aspect Ratio Plugin Support -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+    theme: {
+    extend: {},
+    },
+    plugins: [require('@tailwindcss/aspect-ratio')],
+}
+</script>
+
 </html>

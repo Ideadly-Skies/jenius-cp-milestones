@@ -8,15 +8,15 @@
 </head>
 <body>
     <!-- navbar for jenius -->
-    <nav class="bg-gray-200 border-gray-200 dark:bg-gray-900 sticky top-0 z-10">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 sticky top-0 z-10" style="position: fixed; width: 100vw; height: 80px;">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://www.jenius.com/assets/img/brand/logo_jenius-blue.svg" class="h-8" alt="Flowbite Logo" />
             </a>
             
             <!-- navbar content -->
-            <div class="bg-gray-200 items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-language">
-                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 rounded-lg bg-gray-200 border-0 rtl:space-x-reverse">
+            <div class="bg-white items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-language">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 rounded-lg bg-white border-0 rtl:space-x-reverse">
                     <li>
                         <a href="./index.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Home</a>
                     </li>
@@ -27,7 +27,7 @@
                         <a href="./portfolio.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Register</a>
+                        <a href="./register.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Register</a>
                     </li>
                     <li>
                         <a href="./about-us.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">About Us</a>
@@ -59,7 +59,7 @@
 
 
     <!-- Help Section -->
-    <div class="bg-white py-12">
+    <div class="bg-white py-12 mt-[80px]">
         <div class="max-w-screen-xl mx-auto text-center">
             <h2 class="text-3xl font-semibold text-gray-700 mb-10">
                 Temukan info yang kamu butuhkan seputar Jenius
@@ -67,29 +67,40 @@
 
             <!-- Icon Row -->
             <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12">
+                
                 <!-- Browse FAQ -->
-                <div class="flex flex-col items-center space-y-2 px-8 group cursor-pointer">
+                <div class="flex flex-col justify-center items-center border-2 border-gray-300 hover:border-blue-400 
+                            w-64 h-64 group cursor-pointer transition-all duration-300">
                     <img src="https://www.jenius.com/assets/img/support/ic_support_FAQ_on.jpg" 
                         alt="FAQ Icon" 
-                        class="w-16 h-16 group-hover:text-blue-500 transition-all duration-300">
-                    <p class="text-gray-500 text-lg group-hover:text-blue-500 transition-all duration-300">Browse Our FAQ</p>
+                        class="w-16 h-16 mb-4 group-hover:text-blue-500 transition-all duration-300">
+                    <p class="text-gray-500 text-lg group-hover:text-blue-500 transition-all duration-300">
+                        Browse Our FAQ
+                    </p>
                 </div>
 
-                <!-- Get Help (Highlighted) -->
-                <div class="border-2 border-gray-300 hover:border-blue-400 rounded-lg p-6 px-8 group cursor-pointer transition-all duration-300">
+                <!-- Get Help -->
+                <div class="flex flex-col justify-center items-center border-2 border-gray-300 hover:border-blue-400 
+                            w-64 h-64 group cursor-pointer transition-all duration-300">
                     <img src="https://www.jenius.com/assets/img/support/ic_support_help_on.jpg" 
                         alt="Help Icon" 
-                        class="w-16 h-16 mb-4 mx-auto group-hover:text-blue-500 transition-all duration-300">
-                    <p class="text-gray-500 text-lg group-hover:text-blue-500 transition-all duration-300">Get Help</p>
+                        class="w-16 h-16 mb-4 group-hover:text-blue-500 transition-all duration-300">
+                    <p class="text-gray-500 text-lg group-hover:text-blue-500 transition-all duration-300">
+                        Get Help
+                    </p>
                 </div>
 
                 <!-- Jenius Dictionary -->
-                <div class="flex flex-col items-center space-y-2 px-8 group cursor-pointer">
+                <div class="flex flex-col justify-center items-center border-2 border-gray-300 hover:border-blue-400 
+                            w-64 h-64 group cursor-pointer transition-all duration-300">
                     <img src="https://www.jenius.com/assets/img/support/ic_support_dictionary_on.jpg" 
                         alt="Dictionary Icon" 
-                        class="w-16 h-16 group-hover:text-blue-500 transition-all duration-300">
-                    <p class="text-gray-500 text-lg group-hover:text-blue-500 transition-all duration-300">Jenius Dictionary</p>
+                        class="w-16 h-16 mb-4 group-hover:text-blue-500 transition-all duration-300">
+                    <p class="text-gray-500 text-lg group-hover:text-blue-500 transition-all duration-300">
+                        Jenius Dictionary
+                    </p>
                 </div>
+
             </div>
         </div>
 
@@ -100,7 +111,7 @@
         <div class="grid grid-cols-1 mt-8 md:grid-cols-2 gap-y-12 gap-x-24 px-8 md:px-20 lg:px-32">
 
             <!-- Product & Feature Info -->
-            <div class="text-center border-r-0 md:border-r border-gray-300 md:pr-8">
+            <div class="text-center border-r-0 md: border-gray-300 md:pr-8">
                 <h3 class="text-xl font-medium mb-4">Butuh informasi produk & fitur?</h3>
                 <p class="text-gray-500 mb-6">
                     Kamu bisa tanya-jawab 24 jam dengan NIX via website!
@@ -133,7 +144,7 @@
                             alt="Email Icon" 
                             width="25" 
                             class="inline-block">
-                        <a href="mailto:jenius-help@btpn.com" class="text-blue-500 hover:underline">
+                        <a href="mailto:jenius-help@btpn.com" class="text-[#20a4dc] hover:underline">
                             jenius-help@btpn.com
                         </a>
                     </div>

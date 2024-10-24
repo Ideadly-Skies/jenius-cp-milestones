@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../output.css" rel="stylesheet">
-    <title>Products Page</title>
+    <title>Register Page</title>
 </head>
 <body>
     <!-- navbar for jenius -->
@@ -56,80 +56,75 @@
         </div>
     </nav>
 
-    <!-- kartu jenius -->
-    <div class="bg-[#58A7DB] py-16 px-8 mt-[80px]">
-        <div class="max-w-screen-xl mx-auto text-center">
-          <!-- Section Header -->
-          <h2 class="text-4xl font-semibold text-white mb-4">Kartu Jenius</h2>
-          <p class="text-lg text-white mb-8">
-            Beragam kartu debit dan kredit Jenius untuk membantumu bertransaksi apapun kebutuhanmu.
-          </p>
-      
-          <!-- CTA Button -->
-          <button class="bg-white text-blue-500 font-semibold py-2 px-6 mb-12 rounded-full hover:bg-gray-100 transition flex items-center space-x-2 mx-auto">
-            <span>Coba Sekarang</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-      
-          <!-- Image Section -->
-          <div class="mt-12">
-            <img src="https://assets.jenius.com/assets/2022/09/30080014/credit-card-kv-removebg-preview.png" alt="Kartu Jenius" class="mx-auto rounded-lg">
-          </div>
-        </div>
-    </div>
+    <!-- Registration Form Section -->
+    <div class="flex items-center justify-center min-h-screen mt-8 bg-gray-200">
+        <div class="bg-white shadow-md rounded-lg p-10 max-w-5xl flex items-center space-x-10">
 
-    <!-- kartu debit jenius -->
-    <div class="bg-gray-100 py-12 px-8">
-        <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-lg p-8 flex flex-col md:flex-row items-center">
-            <!-- Text Section -->
-            <div class="md:w-1/2 text-center md:text-left">
-                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Kartu Debit Jenius</h2>
-                <p class="text-lg text-gray-600 mb-6">
-                    Tiga jenis kartu debit untuk berbagai pembayaran, termasuk transaksi <i>online</i>.
+            <!-- Illustration -->
+            <div class="w-1/2">
+                <img src="https://developers.btpn.com/images/assets-btpn/img-login.jpg" 
+                     alt="Illustration" class="w-full bg-gray-200">
+            </div>
+
+            <!-- Registration Form -->
+            <div class="w-1/2">
+                <h2 class="text-3xl font-semibold text-orange-500 mb-2">Registrasi Akun</h2>
+                <p class="text-gray-600 mb-6">
+                    Silakan gunakan akun Anda dan dapatkan akses serta manfaat selengkapnya di website ini.
                 </p>
-                <button class="bg-blue-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-600 transition flex items-center space-x-2">
-                    <span>Lebih Lanjut</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                </button>
+
+                <form class="space-y-4" action="" method="post">
+                    <!-- Name Input -->
+                    <div class="relative">
+                        <input type="text" placeholder="Your Name" 
+                               class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="relative">
+                        <input type="email" placeholder="Your Email" 
+                               class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="relative">
+                        <input type="password" placeholder="Password" 
+                               class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+                    </div>
+
+                    <!-- Confirm Password Input -->
+                    <div class="relative">
+                        <input type="password" placeholder="Confirm Password" 
+                               class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+                    </div>
+
+                    <!-- Referral Code Input -->
+                    <div class="relative">
+                        <input type="text" placeholder="Referral Code (optional)" 
+                               class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+                    </div>
+
+                    <!-- Terms and Conditions -->
+                    <div class="flex items-center space-x-2">
+                        <input type="checkbox" class="h-5 w-5 text-orange-500">
+                        <label class="text-gray-600">I agree to the 
+                            <a href="#" class="text-orange-500 hover:underline">Terms & Conditions</a>.
+                        </label>
+                    </div>
+
+                    <!-- Sign Up Button -->
+                    <button type="submit" 
+                            class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-md text-lg">
+                        Sign up
+                    </button>
+                </form>
             </div>
 
-            <!-- Image Section -->
-            <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-                <img src="https://assets.jenius.com/assets/2022/09/30080531/Kartu-Debit-Jenius-1.png" alt="Kartu Debit Jenius" class="rounded-lg" width="350" height="350">
-            </div>
         </div>
-    </div>
-
-    <!-- kartu kredit jenius -->
-    <div class="bg-gray-100 py-12 px-8">
-        <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-lg p-8 flex flex-col md:flex-row items-center">
-            <!-- Image Section -->
-            <div class="md:w-1/2 flex justify-center md:justify-start">
-                <img src="https://assets.jenius.com/assets/2022/09/30080111/Kartu-Kredit-Jenius-1-e1663755438146.png" alt="Kartu Kredit Jenius" class="rounded-lg" width="350" height="350">
-            </div>
-
-            <!-- Text Section -->
-            <div class="md:w-1/2 mt-8 md:mt-0 md:ml-8 text-center md:text-left">
-                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Kartu Kredit Jenius</h2>
-                <p class="text-lg text-gray-600 mb-6">
-                    Kartu kredit digital yang lebih simpel untuk membantu kamu mengelola <i>cash flow</i>.
-                </p>
-                <button class="bg-blue-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-600 transition flex items-center space-x-2">
-                    <span>Lebih Lanjut</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
+    </div>    
 
     <!-- footer for btpn -->
-    <footer class="bg-[#58A7DB] text-white py-3 px-4 md:px-12">
+    <footer class="bg-[#58A7DB] text-white py-12 px-4 md:px-12">
         <div class="max-w-screen-xl mx-auto">
           <!-- Top Section -->
           <div class="text-center mb-10">
@@ -139,8 +134,8 @@
               Download Sekarang
             </button>
             <div class="mt-4 flex justify-center space-x-4">
-              <button><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-12"></button>
-              <button><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Download_on_the_App_Store_Badge_US-UK_RGB_blk.svg" alt="App Store" class="h-12"></button>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-12">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Download_on_the_App_Store_Badge_US-UK_RGB_blk.svg" alt="App Store" class="h-12">
             </div>
           </div>
       
@@ -202,5 +197,7 @@
           </div>
         </div>
     </footer>
+
+
 </body>
 </html>
