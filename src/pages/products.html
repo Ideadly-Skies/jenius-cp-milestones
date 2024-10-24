@@ -3,9 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
     <title>Products Page</title>
 </head>
 <body>
-    <h1 class="text-red-500">This is the products page</h1>    
+    <!-- navbar for jenius -->
+    <nav class="bg-gray-200 border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://www.jenius.com/assets/img/brand/logo_jenius-blue.svg" class="h-8" alt="Flowbite Logo" />
+            </a>
+            
+            <!-- navbar content -->
+            <div class="bg-gray-200 items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-language">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 rounded-lg bg-gray-200 border-0 rtl:space-x-reverse">
+                    <li>
+                        <a href="./index.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Products</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Register</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- languages -->
+            <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+                <button 
+                    type="button" 
+                    class="bg-[#58A7DB] hover:bg-[#3E8AB7] text-white font-bold text-lg py-2 px-6 rounded-full focus:outline-none focus:ring-4 focus:ring-blue-300">
+                    Get Jenius
+                </button>
+
+                <a type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer">
+                    <svg class="w-5 h-5 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <rect width="512" height="256" fill="#ff0000"/> <!-- Red top half -->
+                        <rect y="256" width="512" height="256" fill="#ffffff"/> <!-- White bottom half -->
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- kartu jenius -->
+    <div class="bg-blue-500 py-16 px-8">
+        <div class="max-w-screen-xl mx-auto text-center">
+          <!-- Section Header -->
+          <h2 class="text-4xl font-semibold text-white mb-4">Kartu Jenius</h2>
+          <p class="text-lg text-white mb-8">
+            Beragam kartu debit dan kredit Jenius untuk membantumu bertransaksi apapun kebutuhanmu.
+          </p>
+      
+          <!-- CTA Button -->
+          <button class="bg-white text-blue-500 font-semibold py-2 px-6 mb-12 rounded-full hover:bg-gray-100 transition flex items-center space-x-2 mx-auto">
+            <span>Coba Sekarang</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+      
+          <!-- Image Section -->
+          <div class="mt-12">
+            <img src="https://assets.jenius.com/assets/2022/09/30080014/credit-card-kv-removebg-preview.png" alt="Kartu Jenius" class="mx-auto rounded-lg">
+          </div>
+        </div>
+    </div>
+
+    <!-- kartu debit jenius -->
+    <div class="bg-gray-100 py-12 px-8">
+        <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-lg p-8 flex flex-col md:flex-row items-center">
+            <!-- Text Section -->
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Kartu Debit Jenius</h2>
+                <p class="text-lg text-gray-600 mb-6">
+                    Tiga jenis kartu debit untuk berbagai pembayaran, termasuk transaksi <i>online</i>.
+                </p>
+                <button class="bg-blue-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-600 transition flex items-center space-x-2">
+                    <span>Lebih Lanjut</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Image Section -->
+            <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+                <img src="https://assets.jenius.com/assets/2022/09/30080531/Kartu-Debit-Jenius-1.png" alt="Kartu Debit Jenius" class="rounded-lg" width="350" height="350">
+            </div>
+        </div>
+    </div>
+
+    <!-- kartu kredit jenius -->
+    <div class="bg-gray-100 py-12 px-8">
+        <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-lg p-8 flex flex-col md:flex-row items-center">
+            <!-- Image Section -->
+            <div class="md:w-1/2 flex justify-center md:justify-start">
+                <img src="https://assets.jenius.com/assets/2022/09/30080111/Kartu-Kredit-Jenius-1-e1663755438146.png" alt="Kartu Kredit Jenius" class="rounded-lg" width="350" height="350">
+            </div>
+
+            <!-- Text Section -->
+            <div class="md:w-1/2 mt-8 md:mt-0 md:ml-8 text-center md:text-left">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Kartu Kredit Jenius</h2>
+                <p class="text-lg text-gray-600 mb-6">
+                    Kartu kredit digital yang lebih simpel untuk membantu kamu mengelola <i>cash flow</i>.
+                </p>
+                <button class="bg-blue-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-600 transition flex items-center space-x-2">
+                    <span>Lebih Lanjut</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer for btpn -->
+    <footer class="bg-[#58A7DB] text-white py-3 px-4 md:px-12">
+        <div class="max-w-screen-xl mx-auto">
+          <!-- Top Section -->
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold mb-4">Mau Hidup Simpel?</h2>
+            <p class="mb-6">Segera aktivasi dari aplikasi untuk memiliki akun Jenius. Prosesnya mudah, tanpa susah.</p>
+            <button class="bg-white text-blue-600 font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition">
+              Download Sekarang
+            </button>
+            <div class="mt-4 flex justify-center space-x-4">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-12">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Download_on_the_App_Store_Badge_US-UK_RGB_blk.svg" alt="App Store" class="h-12">
+            </div>
+          </div>
+      
+          <!-- Links Section -->
+          <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-10">
+            <div>
+              <h3 class="font-bold mb-3">Navigation</h3>
+              <ul>
+                <li class="font-semibold">Transactions</li>
+                <li>Pembayaran</li>
+                <li>Tagih Uang</li>
+                <li>Kirim Uang</li>
+                <li>Kelola Transaksi</li>
+              </ul>
+            </div>
+      
+            <div>
+              <h3 class="font-bold mb-3">Tracking & Settings</h3>
+              <ul>
+                <li>Histori</li>
+                <li>Card Center</li>
+              </ul>
+            </div>
+      
+            <div>
+              <h3 class="font-bold mb-3">Wealth</h3>
+              <ul>
+                <li>Tabungan</li>
+                <li>Investasi</li>
+                <li>Proteksi</li>
+                <li>Kredit</li>
+              </ul>
+            </div>
+      
+            <div>
+              <h3 class="font-bold mb-3">Jenius Help</h3>
+              <ul>
+                <li>Get Help</li>
+                <li>FAQ</li>
+                <li>Dictionary</li>
+              </ul>
+            </div>
+      
+            <div>
+              <h3 class="font-bold mb-3">Follow</h3>
+              <div class="flex space-x-4">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="h-6"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="h-6"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="YouTube" class="h-6"></a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Bottom Section -->
+          <div class="border-t border-white mt-10 pt-6 text-center">
+            <p class="text-sm">
+              PT Bank BTPN Tbk berizin dan diawasi oleh Otoritas Jasa Keuangan (OJK), Bank Indonesia (BI) dan merupakan peserta penjaminan LPS.
+            </p>
+          </div>
+        </div>
+    </footer>
 </body>
 </html>
