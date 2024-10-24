@@ -3,9 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
     <title>contact us page</title>
 </head>
 <body>
-    <h1>Contact us page</h1>
+    <!-- navbar for jenius -->
+    <nav class="bg-gray-200 border-gray-200 dark:bg-gray-900 sticky top-0 z-10">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://www.jenius.com/assets/img/brand/logo_jenius-blue.svg" class="h-8" alt="Flowbite Logo" />
+            </a>
+            
+            <!-- navbar content -->
+            <div class="bg-gray-200 items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-language">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 rounded-lg bg-gray-200 border-0 rtl:space-x-reverse">
+                    <li>
+                        <a href="./index.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Home</a>
+                    </li>
+                    <li>
+                        <a href="./products.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Products</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Register</a>
+                    </li>
+                    <li>
+                        <a href="./about-us.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-300 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <!-- languages -->
+            <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+                <button 
+                    type="button" 
+                    class="bg-[#58A7DB] hover:bg-[#3E8AB7] text-white font-bold text-lg py-2 px-6 rounded-full focus:outline-none focus:ring-4 focus:ring-blue-300">
+                    Get Jenius
+                </button>
+
+                <a type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer">
+                    <svg class="w-5 h-5 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <rect width="512" height="256" fill="#ff0000"/> <!-- Red top half -->
+                        <rect y="256" width="512" height="256" fill="#ffffff"/> <!-- White bottom half -->
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Help Section -->
+    <div class="bg-white py-12">
+        <div class="max-w-screen-xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-700 mb-10">
+                Temukan info yang kamu butuhkan seputar Jenius
+            </h2>
+
+            <!-- Icon Row -->
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12">
+                <!-- Browse FAQ -->
+                <div class="flex flex-col items-center space-y-2 px-8 group cursor-pointer">
+                    <img src="https://www.jenius.com/assets/img/support/ic_support_FAQ_on.jpg" 
+                        alt="FAQ Icon" 
+                        class="w-16 h-16 group-hover:text-blue-500 transition-all duration-300">
+                    <p class="text-gray-500 text-lg group-hover:text-blue-500 transition-all duration-300">Browse Our FAQ</p>
+                </div>
+
+                <!-- Get Help (Highlighted) -->
+                <div class="border-2 border-gray-300 hover:border-blue-400 rounded-lg p-6 px-8 group cursor-pointer transition-all duration-300">
+                    <img src="https://www.jenius.com/assets/img/support/ic_support_help_on.jpg" 
+                        alt="Help Icon" 
+                        class="w-16 h-16 mb-4 mx-auto group-hover:text-blue-500 transition-all duration-300">
+                    <p class="text-gray-500 text-lg group-hover:text-blue-500 transition-all duration-300">Get Help</p>
+                </div>
+
+                <!-- Jenius Dictionary -->
+                <div class="flex flex-col items-center space-y-2 px-8 group cursor-pointer">
+                    <img src="https://www.jenius.com/assets/img/support/ic_support_dictionary_on.jpg" 
+                        alt="Dictionary Icon" 
+                        class="w-16 h-16 group-hover:text-blue-500 transition-all duration-300">
+                    <p class="text-gray-500 text-lg group-hover:text-blue-500 transition-all duration-300">Jenius Dictionary</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="my-8 border-gray-300 w-full">
+
+        <!-- Contact Row -->
+        <div class="grid grid-cols-1 mt-8 md:grid-cols-2 gap-y-12 gap-x-24 px-8 md:px-20 lg:px-32">
+
+            <!-- Product & Feature Info -->
+            <div class="text-center border-r-0 md:border-r border-gray-300 md:pr-8">
+                <h3 class="text-xl font-medium mb-4">Butuh informasi produk & fitur?</h3>
+                <p class="text-gray-500 mb-6">
+                    Kamu bisa tanya-jawab 24 jam dengan NIX via website!
+                </p>
+                <a href="javascript:void(0)" class="flex justify-center items-center space-x-2 text-blue-500 hover:underline">
+                    <img src="https://assets.jenius.com/assets/2024/07/29075002/ic_chat.png" 
+                        alt="Chat Icon" 
+                        width="25" 
+                        class="inline-block">
+                    <span class="text-[#20a4dc]">Chat NIX website</span>
+                </a>
+            </div>
+
+            <!-- Complaint Info -->
+            <div class="text-center md:pl-8">
+                <h3 class="text-xl font-medium mb-4">Ada masalah atau keluhan?</h3>
+                <p class="text-gray-500 mb-6">
+                    Hubungi Jenius 24 jam via di bawah ini, atau chat NIX di aplikasi Jenius.
+                </p>
+                <div class="flex justify-center space-x-8">
+                    <div class="flex items-center space-x-2 px-8">
+                        <img src="https://assets.jenius.com/assets/2024/07/29075001/ic_call.png" 
+                            alt="Call Icon" 
+                            width="25" 
+                            class="inline-block">
+                        <span class="text-gray-700">1500 365</span>
+                    </div>
+                    <div class="flex items-center space-x-2 px-8">
+                        <img src="https://assets.jenius.com/assets/2024/07/29075002/ic_email.png" 
+                            alt="Email Icon" 
+                            width="25" 
+                            class="inline-block">
+                        <a href="mailto:jenius-help@btpn.com" class="text-blue-500 hover:underline">
+                            jenius-help@btpn.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer for btpn -->
+    <footer class="bg-[#58A7DB] text-white py-12 px-4 md:px-12">
+        <div class="max-w-screen-xl mx-auto">
+          <!-- Top Section -->
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold mb-4">Mau Hidup Simpel?</h2>
+            <p class="mb-6">Segera aktivasi dari aplikasi untuk memiliki akun Jenius. Prosesnya mudah, tanpa susah.</p>
+            <button class="bg-white text-blue-600 font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition">
+              Download Sekarang
+            </button>
+            <div class="mt-4 flex justify-center space-x-4">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-12">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Download_on_the_App_Store_Badge_US-UK_RGB_blk.svg" alt="App Store" class="h-12">
+            </div>
+          </div>
+      
+          <!-- Links Section -->
+          <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-10">
+            <div>
+              <h3 class="font-bold mb-3">Navigation</h3>
+              <ul>
+                <li class="font-semibold">Transactions</li>
+                <li>Pembayaran</li>
+                <li>Tagih Uang</li>
+                <li>Kirim Uang</li>
+                <li>Kelola Transaksi</li>
+              </ul>
+            </div>
+      
+            <div>
+              <h3 class="font-bold mb-3">Tracking & Settings</h3>
+              <ul>
+                <li>Histori</li>
+                <li>Card Center</li>
+              </ul>
+            </div>
+      
+            <div>
+              <h3 class="font-bold mb-3">Wealth</h3>
+              <ul>
+                <li>Tabungan</li>
+                <li>Investasi</li>
+                <li>Proteksi</li>
+                <li>Kredit</li>
+              </ul>
+            </div>
+      
+            <div>
+              <h3 class="font-bold mb-3">Jenius Help</h3>
+              <ul>
+                <li>Get Help</li>
+                <li>FAQ</li>
+                <li>Dictionary</li>
+              </ul>
+            </div>
+      
+            <div>
+              <h3 class="font-bold mb-3">Follow</h3>
+              <div class="flex space-x-4">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="h-6"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="h-6"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="YouTube" class="h-6"></a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Bottom Section -->
+          <div class="border-t border-white mt-10 pt-6 text-center">
+            <p class="text-sm">
+              PT Bank BTPN Tbk berizin dan diawasi oleh Otoritas Jasa Keuangan (OJK), Bank Indonesia (BI) dan merupakan peserta penjaminan LPS.
+            </p>
+          </div>
+        </div>
+    </footer>
 </body>
 </html>
